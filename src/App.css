@@ -24,8 +24,38 @@ body {
   width: 600px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 100px;
   border-radius: 15px;
   box-shadow: 2px 5px 15px 5px #61dafb;
+}
+
+.PlayArea {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  background-color: #282c34;
+  margin: auto;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 15px 5px #61dafb;
+}
+
+.MovingButton {
+  height: 30px;
+  width: 90px;
+  background-color: #282c34;
+  border-radius: 8px;
+  border-color: rgb(241, 93, 234);
+  color: rgb(241, 93, 234);
+  font-family: fantasy;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.MovingButton:hover {
+  background-color: rgb(241, 93, 234);
+  color: #282c34;
 }
 
 .Output {
@@ -33,4 +63,7 @@ body {
   font-size: 64pt;
   font-family: fantasy;
   margin-top: 200px;
+  position: relative;
+  top: 0%;
+  left: 50%;
 }

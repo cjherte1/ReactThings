@@ -7,8 +7,14 @@ function App() {
   const [num, setNum] = useState(0);
 
   function handleClick(number) {
-    console.log("1");
     setNum(number);
+  }
+
+  function handleMoveClick(e) {
+    var tpos = Math.floor(Math.random() * 80);
+    var lpos = Math.floor(Math.random() * 80);
+    e.target.style.top = tpos.toString() + "%";
+    e.target.style.left = lpos.toString() + "%";
   }
 
   return (
@@ -22,8 +28,12 @@ function App() {
         <MyButton num={5} onClick={() => handleClick(5)} />
         <MyButton num={6} onClick={() => handleClick(6)} />
       </div>
-
-      <div className="Output"> {num} </div>
+      <div className="PlayArea">
+        <div className="Output"> {num} </div>
+        <button className="MovingButton" onClick={handleMoveClick}>
+          CLICK ME
+        </button>
+      </div>
     </div>
   );
 }
