@@ -1,0 +1,20 @@
+.MyButton {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  background-color: #282c34;
+  border-width: 3px;
+  border-color: rgb(241, 93, 234);
+  border-radius: 15px;
+  color: rgb(241, 93, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32pt;
+  font-family: fantasy;
+}
+
+.MyButton:hover {
+  background-color: rgb(241, 93, 234);
+  color: #282c34;
+}
